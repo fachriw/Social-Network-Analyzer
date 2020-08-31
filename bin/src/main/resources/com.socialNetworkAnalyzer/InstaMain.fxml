@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.socialNetworkAnalyzer.main.ViewController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="profpic" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="usernamelbl" alignment="CENTER" contentDisplay="CENTER">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="numofposts" alignment="CENTER" contentDisplay="CENTER" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="150.0">
+               <children>
+                  <Label fx:id="followerslbl" />
+                  <Label fx:id="followinglbl" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="150.0">
+               <children>
+                  <Label fx:id="followersgainedlbl" />
+                  <Label fx:id="followerslostlbl" layoutX="108.0" layoutY="25.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+               <children>
+                  <Button fx:id="fdfubBtn" mnemonicParsing="false" onAction="#followingdfubHandler" text="Following Don't Follow You Back" />
+                  <Button fx:id="fudfbBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#followersudfb" text="Followers You Don't Follow Back" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
